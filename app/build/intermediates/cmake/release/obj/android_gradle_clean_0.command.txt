@@ -1,0 +1,8 @@
+Executable : C:\Users\para\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+--build
+C:\Users\para\Android\pasteur-android-v3\app\.cxx\cmake\release\armeabi-v7a
+--target
+clean
+jvmArgs : 
+

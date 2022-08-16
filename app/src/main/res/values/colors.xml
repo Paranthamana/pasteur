@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="control_background">#2699fb</color>
+    <color name="colorPrimary">#46A8FC</color>
+    <color name="colorPrimaryDark">#7DBBEE</color>
+    <color name="colorAccent">#83C0F5</color>
+    <color name="colorWhite">#FCF9FA</color>
+    <color name="hintColor">#6BCECBCB</color>
+    <color name="green">#02F50C</color>
+    <color name="buttonShadow">#1a7391</color>
+    <color name="buttonNoShadow">#3d97b5</color>
+    <color name="red">#0AFA02</color>
+    <color name="qr_code_white">#FFFFFFFF</color>
+    <color name="qr_code_flashlight_bg">#66000000</color>
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#66FFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">#25f705</color>
+    <color name="transparent">#00000000 </color>
+    <color name="messageBg">#5DBCD2 </color>
+    <color name="grayDark">#868686</color>
+    <color name="colorIndicator">#f28421</color>
+    <color name="textColorGray">#d9d9d9</color>
+    <color name="bgGray">#F9F9F9</color>
+    <color name="textTitle">#666666</color>
+    <color name="textSubTitle">#999999</color>
+    <color name="black">#000000 </color>
+    <color name="trans">#C6FCF9FA</color>
+    <color name="lightGray">#F5F5F5</color>
+    <color name="lightBg">#FCEFF3F7</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <color name="lightBlue">#fbfcfc</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+    <color name="dialogBackground">#1B000000</color>
+    <color name="homebg">#E5E7E9 </color>
+</resources>

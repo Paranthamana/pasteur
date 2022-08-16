@@ -1,0 +1,150 @@
+[1/1] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\armeabi-v7a\libmace_mobile_jni.so
+FAILED: cmd.exe /C "cd . && E:\Android\android-sdks\android-sdks\ndk\22.1.7171670\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=armv7-none-linux-androideabi21 --gcc-toolchain=E:/Android/android-sdks/android-sdks/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/Android/android-sdks/android-sdks/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -fopenmp -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -shared -Wl,-soname,libmace_mobile_jni.so -o ..\..\..\..\build\intermediates\cmake\debug\obj\armeabi-v7a\libmace_mobile_jni.so CMakeFiles/mace_mobile_jni.dir/src/main/cpp/spe.cc.o  ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a ../../../../src/main/cpp/lib/armeabi-v7a/cpm.a -llog -latomic -lm && cd ."
+ld: error: undefined symbol: mace::MaceEngine::Init(mace::NetDef const*, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > > > const&, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > > > const&, unsigned char const*)
+>>> referenced by mace_engine_factory.h:66 (../../../..\src/main/cpp/include/mace/public\mace_engine_factory.h:66)
+>>>               CMakeFiles/mace_mobile_jni.dir/src/main/cpp/spe.cc.o:(mace::CreateMaceEngineFromCode(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > > > const&, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > > > const&, mace::DeviceType, std::__ndk1::shared_ptr<mace::MaceEngine>*))
+
+ld: error: undefined symbol: mace::FileStorageFactory::FileStorageFactory(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&)
+>>> referenced by spe.cc:104 (E:\desktop\Android\pasteur-android-v3\macelibrary\src\main\cpp\spe.cc:104)
+>>>               CMakeFiles/mace_mobile_jni.dir/src/main/cpp/spe.cc.o:(Java_com_xiaomi_mace_JniMaceUtils_maceMobilenetSetAttrs)
+
+ld: error: undefined symbol: mace::SetKVStorageFactory(std::__ndk1::shared_ptr<mace::KVStorageFactory>)
+>>> referenced by spe.cc:105 (E:\desktop\Android\pasteur-android-v3\macelibrary\src\main\cpp\spe.cc:105)
+>>>               CMakeFiles/mace_mobile_jni.dir/src/main/cpp/spe.cc.o:(Java_com_xiaomi_mace_JniMaceUtils_maceMobilenetSetAttrs)
+
+ld: error: undefined symbol: mace::MaceTensor::MaceTensor(std::__ndk1::vector<long long, std::__ndk1::allocator<long long> > const&, std::__ndk1::shared_ptr<float>)
+>>> referenced by spe.cc:201 (E:\desktop\Android\pasteur-android-v3\macelibrary\src\main\cpp\spe.cc:201)
+>>>               CMakeFiles/mace_mobile_jni.dir/src/main/cpp/spe.cc.o:(Java_com_xiaomi_mace_JniMaceUtils_maceMobilenetClassify)
+>>> referenced by spe.cc:206 (E:\desktop\Android\pasteur-android-v3\macelibrary\src\main\cpp\spe.cc:206)
+>>>               CMakeFiles/mace_mobile_jni.dir/src/main/cpp/spe.cc.o:(Java_com_xiaomi_mace_JniMaceUtils_maceMobilenetClassify)
+
+ld: error: undefined symbol: mace::MaceEngine::Run(std::__ndk1::map<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, mace::MaceTensor, std::__ndk1::less<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > >, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const, mace::MaceTensor> > > const&, std::__ndk1::map<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, mace::MaceTensor, std::__ndk1::less<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > >, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const, mace::MaceTensor> > >*)
+>>> referenced by spe.cc:209 (E:\desktop\Android\pasteur-android-v3\macelibrary\src\main\cpp\spe.cc:209)
+>>>               CMakeFiles/mace_mobile_jni.dir/src/main/cpp/spe.cc.o:(Java_com_xiaomi_mace_JniMaceUtils_maceMobilenetClassify)
+
+ld: error: undefined symbol: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(.text._ZN4mace18FileStorageFactory4ImplC2ERKSs+0x0) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::FileStorageFactory(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 217 more times
+
+ld: error: undefined symbol: std::string::append(char const*, unsigned int)
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by external/com_google_protobuf/src/google/protobuf/stubs/common.cc
+>>>               common.o:(google::protobuf::internal::VerifyVersion(int, int, char const*)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by external/com_google_protobuf/src/google/protobuf/stubs/common.cc
+>>>               common.o:(google::protobuf::internal::VerifyVersion(int, int, char const*)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 91 more times
+
+ld: error: undefined symbol: std::string::append(std::string const&)
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by bazel-out/armeabi-v7a-opt/genfiles/mace/proto/mace.pb.cc
+>>>               mace.pb.o:(mace::ConstTensor::ConstTensor(mace::ConstTensor const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by bazel-out/armeabi-v7a-opt/genfiles/mace/proto/mace.pb.cc
+>>>               mace.pb.o:(mace::ConstTensor::MergeFrom(mace::ConstTensor const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 96 more times
+
+ld: error: undefined symbol: std::string::_Rep::_M_destroy(std::allocator<char> const&)
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 14356 more times
+
+ld: error: undefined symbol: std::string::_Rep::_S_empty_rep_storage
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::FileStorageFactory::Impl::CreateStorage(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 15323 more times
+
+ld: error: undefined symbol: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::SetKVStorageFactory(std::shared_ptr<mace::KVStorageFactory>)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::SetGPUHints(mace::GPUPerfHint, mace::GPUPriorityHint)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::SetGPUHints(mace::GPUPerfHint, mace::GPUPriorityHint)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 2811 more times
+
+ld: error: undefined symbol: std::string::assign(std::string const&)
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::SetOpenCLParameterPath(std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by bazel-out/armeabi-v7a-opt/genfiles/mace/proto/mace.pb.cc
+>>>               mace.pb.o:(mace::ConstTensor::MergeFrom(mace::ConstTensor const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by bazel-out/armeabi-v7a-opt/genfiles/mace/proto/mace.pb.cc
+>>>               mace.pb.o:(mace::Argument::MergeFrom(mace::Argument const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 264 more times
+
+ld: error: undefined symbol: std::ostream::operator<<(int)
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::SetGPUHints(mace::GPUPerfHint, mace::GPUPriorityHint)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::SetGPUHints(mace::GPUPerfHint, mace::GPUPriorityHint)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace_runtime.cc
+>>>               mace_runtime.o:(mace::SetOpenMPThreadPolicy(int, mace::CPUAffinityPolicy)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 355 more times
+
+ld: error: undefined symbol: std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::basic_ostringstream(std::_Ios_Openmode)
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::LogMessage(char const*, int, int)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::LogMessage(char const*, int, int)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+
+ld: error: undefined symbol: std::ios_base::ios_base()
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::LogMessage(char const*, int, int)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+
+ld: error: undefined symbol: std::ios_base::~ios_base()
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::LogMessage(char const*, int, int)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::GenerateLogMessage()) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::GenerateLogMessage()) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 158 more times
+
+ld: error: undefined symbol: vtable for std::basic_ios<char, std::char_traits<char> >
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::LogMessage(char const*, int, int)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> the vtable symbol may be undefined because the class is missing its key function (see https://lld.llvm.org/missingkeyfunction)
+
+ld: error: undefined symbol: std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::basic_stringstream(std::_Ios_Openmode)
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::GenerateLogMessage()) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace.cc
+>>>               mace.o:(std::string mace::MakeString<char [17], std::string>(char const (&) [17], std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/libmace/mace.cc
+>>>               mace.o:(std::string mace::MakeString<char [18], std::string>(char const (&) [18], std::string const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 72 more times
+
+ld: error: undefined symbol: std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::str() const
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::GenerateLogMessage()) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::GenerateLogMessage()) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::GenerateLogMessage()) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 78 more times
+
+ld: error: undefined symbol: std::ctype<char>::_M_widen_init() const
+>>> referenced by mace/utils/logging.cc
+>>>               logging.o:(mace::logging::LogMessage::GenerateLogMessage()) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by external/com_google_protobuf/src/google/protobuf/stubs/int128.cc
+>>>               int128.o:(google::protobuf::operator<<(std::ostream&, google::protobuf::uint128 const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced by external/com_google_protobuf/src/google/protobuf/stubs/int128.cc
+>>>               int128.o:(google::protobuf::operator<<(std::ostream&, google::protobuf::uint128 const&)) in archive ../../../../src/main/cpp/lib/armeabi-v7a/libmace.a
+>>> referenced 2 more times
+
+ld: error: too many errors emitted, stopping now (use -error-limit=0 to see all errors)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.

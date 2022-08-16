@@ -1,0 +1,3 @@
+E:/desktop/Android/pasteur-android-v3/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/jupiter_opencv_320.dir
+E:/desktop/Android/pasteur-android-v3/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/desktop/Android/pasteur-android-v3/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir

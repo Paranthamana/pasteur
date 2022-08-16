@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pasteur-android-v3.iml" filepath="$PROJECT_DIR$/pasteur-android-v3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/pasteur-android-v3.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/pasteur-android-v3.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/macelibrary/pasteur-android-v3.macelibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/macelibrary/pasteur-android-v3.macelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openCVLibrary341/pasteur-android-v3.openCVLibrary341.iml" filepath="$PROJECT_DIR$/.idea/modules/openCVLibrary341/pasteur-android-v3.openCVLibrary341.iml" />
+    </modules>
+  </component>
+</project>

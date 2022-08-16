@@ -1,0 +1,182 @@
+
+{
+	"buildFiles" : [ "C:/Users/para/Android/pasteur-android-v3/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"jupiter_opencv_320-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "jupiter_opencv_320",
+			"buildCommand" : "C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86 --target jupiter_opencv_320",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=C:/Users/para/AppData/Local/Android/Sdk/ndk/16.1.4479499/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/para/AppData/Local/Android/Sdk/ndk/16.1.4479499/sysroot  -Djupiter_opencv_320_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\include -isystem C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\ndk\\16.1.4479499\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\ndk\\16.1.4479499\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\ndk\\16.1.4479499\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/Users/para/AppData/Local/Android/Sdk/ndk/16.1.4479499/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "C:/Users/para/Android/pasteur-android-v3/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "C:/Users/para/Android/pasteur-android-v3/app/.cxx/cmake/release/x86"
+				}
+			],
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/build/intermediates/cmake/release/obj/x86/libjupiter_opencv_320.so",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_calib3d-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_calib3d",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_calib3d.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_core-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_core",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_core.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_features2d-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_features2d",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_features2d.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_flann-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_flann",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_flann.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_highgui-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_highgui",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_highgui.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_imgcodecs-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_imgcodecs",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_imgcodecs.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_imgproc-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_imgproc",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_imgproc.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_java3-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_java3",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_java3.so",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_ml-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_ml",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_ml.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_objdetect-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_objdetect",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_objdetect.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_photo-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_photo",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_photo.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_shape-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_shape",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_shape.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_stitching-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_stitching",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_stitching.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_superres-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_superres",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_superres.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_ts-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_ts",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_ts.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_video-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_video",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_video.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_videoio-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_videoio",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_videoio.a",
+			"toolchain" : "3385018625"
+		},
+		"libopencv_videostab-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libopencv_videostab",
+			"buildType" : "release",
+			"output" : "C:/Users/para/Android/pasteur-android-v3/app/libs/x86/libopencv_videostab.a",
+			"toolchain" : "3385018625"
+		}
+	},
+	"toolchains" : 
+	{
+		"3385018625" : 
+		{
+			"cCompilerExecutable" : "C:/Users/para/AppData/Local/Android/Sdk/ndk/16.1.4479499/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/para/AppData/Local/Android/Sdk/ndk/16.1.4479499/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

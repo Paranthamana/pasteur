@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.activity.PreviousMeasurementActivity">
+
+    <LinearLayout
+        android:id="@+id/llPreviousToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/ivPreviousBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="start|center"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvMeasurement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_weight="1.9"
+            android:gravity="center_horizontal"
+            android:text="Previous Measurement"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/ivDotView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:src="@drawable/ic_menu"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.mlsdev.animatedrv.AnimatedRecyclerView
+        android:id="@+id/rvPreviousMeasurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llListBottomBar"
+        android:layout_below="@+id/llPreviousToolbar"
+        android:layout_margin="@dimen/_3sdp"
+        android:scrollbars="none"
+        app:animationDuration="1000"
+        app:layoutAnimation="@anim/layout_animation_from_bottom"
+        app:layoutManagerOrientation="vertical"
+        app:layoutManagerReverse="false"
+        app:layoutManagerType="linear" />
+
+
+    <RelativeLayout
+        android:id="@+id/llListBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_profile_bg"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/llHelp"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/ic_help" />
+
+            <TextView
+                android:id="@+id/tvHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivGallery"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Help"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/ic_support" />
+
+            <TextView
+                android:id="@+id/tvCustomerSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivSupport"
+                android:text="Customer Support"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

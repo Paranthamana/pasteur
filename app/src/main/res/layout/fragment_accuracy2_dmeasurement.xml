@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    android:orientation="horizontal"
+    tools:context="com.example.fragment.Accuracy2DMeasurementFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMeasurementTwoDList"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/lightBlue"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_toEndOf="@+id/rvMeasurementTwoDList"
+        android:background="@color/lightBlue"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            htext:cardCornerRadius="@dimen/_15sdp"
+            htext:cardElevation="@dimen/_5sdp"
+            htext:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <com.hanks.htextview.HTextView
+                    android:id="@+id/tvMeasurementCM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:text="2.25"
+                    android:textColor="@color/black"
+                    htext:animateType="evaporate" />
+
+                <TextView
+                    android:id="@+id/tvCM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:text="cm"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/ivTwoDPose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/rvMeasurementTwoDList"
+            android:src="@drawable/ic_measure_one" />
+
+    </LinearLayout>
+
+</RelativeLayout>

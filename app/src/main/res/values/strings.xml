@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle">Use NNAPI</string>
+    <string name="app_name">PASTEUR</string>
+
+
+    <string name="ques">?</string>
+    <string name="uName">user name</string>
+    <string name="uNameChinese">名稱</string>
+
+    <string name="title_activity_scan_qr_code">QR Scan</string>
+    <string name="qc_code_close">Close</string>
+    <string name="qr_code_select_picture">Album</string>
+    <string name="qr_code_open_flash_light">Open flash light</string>
+    <string name="qr_code_close_flash_light">Close Flash Light</string>
+    <string name="qr_code_auto_scan_notification">Position QR Code</string>
+    <string name="qr_code_notification">Notification</string>
+    <string name="qr_code_camera_not_open">Could not open your camera</string>
+    <string name="qr_code_positive_button_know">OK</string>
+    <string name="qr_code_positive_button_confirm">Confirm</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">Could not read your image.Try another image~</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">Sorry, could not open scan content</string>
+    <string name="qr_code_camera_not_found">Could not detect camera</string>
+
+    <string name="Profile">Profile</string>
+    <string name="TermsAndCondition">Terms and Condition</string>
+    <string name="Logout">Logout</string>
+
+    //---- Toast message
+    <string name="NothingFound">Nothing Found</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

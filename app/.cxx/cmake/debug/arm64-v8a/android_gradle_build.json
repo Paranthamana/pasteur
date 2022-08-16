@@ -1,0 +1,182 @@
+
+{
+	"buildFiles" : [ "E:/desktop/Android/pasteur-android-v3/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"E:\\Android\\android-sdks\\android-sdks\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\desktop\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\debug\\arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"jupiter_opencv_320-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "jupiter_opencv_320",
+			"buildCommand" : "E:\\Android\\android-sdks\\android-sdks\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\desktop\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\debug\\arm64-v8a --target jupiter_opencv_320",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=E:/Android/android-sdks/android-sdks/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/Android/android-sdks/android-sdks/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Djupiter_opencv_320_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/desktop/Android/pasteur-android-v3/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "E:/desktop/Android/pasteur-android-v3/app/.cxx/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/build/intermediates/cmake/debug/obj/arm64-v8a/libjupiter_opencv_320.so",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_calib3d-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_calib3d",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_calib3d.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_core-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_core",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_core.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_features2d-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_features2d",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_features2d.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_flann-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_flann",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_flann.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_highgui-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_highgui",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_highgui.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_imgcodecs-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_imgcodecs",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_imgcodecs.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_imgproc-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_imgproc",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_imgproc.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_java3-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_java3",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_java3.so",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_ml-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_ml",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_ml.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_objdetect-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_objdetect",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_objdetect.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_photo-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_photo",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_photo.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_shape-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_shape",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_shape.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_stitching-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_stitching",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_stitching.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_superres-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_superres",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_superres.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_ts-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_ts",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_ts.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_video-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_video",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_video.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_videoio-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_videoio",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_videoio.a",
+			"toolchain" : "1337771649"
+		},
+		"libopencv_videostab-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_videostab",
+			"buildType" : "debug",
+			"output" : "E:/desktop/Android/pasteur-android-v3/app/libs/arm64-v8a/libopencv_videostab.a",
+			"toolchain" : "1337771649"
+		}
+	},
+	"toolchains" : 
+	{
+		"1337771649" : 
+		{
+			"cCompilerExecutable" : "E:/Android/android-sdks/android-sdks/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "E:/Android/android-sdks/android-sdks/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "buildFiles": [
+    "C:\\Users\\para\\Android\\pasteur-android-v3\\macelibrary\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\para\\Android\\pasteur-android-v3\\macelibrary\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "mace_lib-Release-armeabi-v7a": {
+      "artifactName": "mace_lib",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\para\\Android\\pasteur-android-v3\\macelibrary\\src\\main\\cpp\\lib\\armeabi-v7a\\libmace.a"
+    },
+    "mobilenet_lib-Release-armeabi-v7a": {
+      "artifactName": "mobilenet_lib",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\para\\Android\\pasteur-android-v3\\macelibrary\\src\\main\\cpp\\lib\\armeabi-v7a\\cpm.a"
+    },
+    "mace_mobile_jni-Release-armeabi-v7a": {
+      "artifactName": "mace_mobile_jni",
+      "buildCommand": "C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\para\\Android\\pasteur-android-v3\\macelibrary\\.cxx\\cmake\\release\\armeabi-v7a --target mace_mobile_jni",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\para\\Android\\pasteur-android-v3\\macelibrary\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libmace_mobile_jni.so"
+    }
+  }
+}

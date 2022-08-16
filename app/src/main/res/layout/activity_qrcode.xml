@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/qr_code_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_54sdp"
+        android:background="#ffffff">
+
+
+        <Button
+
+            android:id="@+id/btnQRBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/ic_backarrow"
+            android:text="" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_activity_scan_qr_code"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+
+            android:id="@+id/qr_code_header_black_pic"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/ic_qrscan"
+            android:text=""
+
+            tools:ignore="OnClick" />
+
+    </RelativeLayout>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:zxing_preview_scaling_strategy="fitXY"
+        app:zxing_use_texture_view="true" />
+
+    <TextView
+        android:id="@+id/tvBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="12233" />
+
+
+</RelativeLayout>

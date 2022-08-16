@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activity.MeasurementHomeActivity">
+
+    <!--android:background="@drawable/common_bg"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:theme="@style/AppThemes">
+
+            <ImageView
+                android:id="@+id/ivProfileBack"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/ic_back"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvToolbarMeasurement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Measurement"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/ivDotView"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_margin="@dimen/_8sdp"
+                android:src="@drawable/ic_menu" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottomBar"
+            android:layout_below="@+id/Toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llQrHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Toolbar"
+                    android:background="@color/homebg"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlScanView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ivKeyPad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_keypad" />
+
+
+                        <FrameLayout
+                            android:id="@+id/flQRCodeValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_toStartOf="@+id/ivQR"
+                            android:layout_toEndOf="@id/ivKeyPad"
+                            android:background="@drawable/bg_home_edit"
+                            android:padding="@dimen/_4sdp">
+
+                            <EditText
+                                android:id="@+id/edtQrCodeResult"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:background="@color/colorWhite"
+                                android:cursorVisible="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="20"
+                                android:padding="@dimen/_5sdp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@color/colorPrimary"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnClose"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:visibility="invisible" />
+
+                        </FrameLayout>
+
+                        <!--</LinearLayout>-->
+
+
+                        <ImageView
+                            android:id="@+id/ivQR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:clickable="false"
+                            android:src="@drawable/ic_qrcode" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlcamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llQrHeader"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llCamera"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_banner_camera" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVideo"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivVideo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bmi_camera" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlcamera"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_80sdp"
+                    android:backgroundTint="@color/homebg"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColorHint="@color/textSubTitle"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlMeasurementProfileDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtProfileName"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/llAge"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_95sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/measurement_age_bg"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/llInnerView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/ivCalender"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_calander" />
+
+                            <EditText
+                                android:id="@+id/edtAgeValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/textSubTitle"
+                                android:enabled="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="Age" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/llHeight"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_95sdp"
+                        android:layout_toEndOf="@+id/llAge"
+                        android:background="@drawable/measurement_age_bg"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edtHeightValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/textSubTitle"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/ivHeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_height" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:hint="Height" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/llWeight"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_95sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/llHeight"
+                        android:background="@drawable/measurement_age_bg"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edtWeightValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/textSubTitle"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/ivWeight"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_weight" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:hint="Weight" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNext"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/next_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Next"
+                        android:textColor="@color/colorWhite" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_send"
+                        android:tint="@color/colorWhite" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/llBottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_profile_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llPreviousMeasurement"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_gallery" />
+
+                <TextView
+                    android:id="@+id/tvPreviousMeasurement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivGallery"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Previous measurement"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite" />
+
+            <LinearLayout
+                android:id="@+id/llHelp"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_help" />
+
+                <TextView
+                    android:id="@+id/tvHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivGallery"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Help"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_support" />
+
+                <TextView
+                    android:id="@+id/tvCustomerSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivGallery"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Customer Support"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

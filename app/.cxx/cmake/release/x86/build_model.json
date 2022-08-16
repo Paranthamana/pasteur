@@ -1,0 +1,80 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "C:\\Users\\para\\Android\\pasteur-android-v3",
+      "sdkFolder": "C:\\Users\\para\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [
+        "armeabi-v7a",
+        "x86",
+        "arm64-v8a"
+      ],
+      "intermediatesFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app",
+      "makeFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\.cxx",
+      "cxxFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx",
+      "ndkFolder": "C:\\Users\\para\\AppData\\Local\\Android\\Sdk\\ndk\\16.1.4479499",
+      "ndkVersion": "16.1.4479499",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      "-std\u003dc++11",
+      "-frtti",
+      "-fexceptions"
+    ],
+    "variantName": "release",
+    "soFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\build\\intermediates\\cmake\\release\\lib",
+    "objFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\build\\intermediates\\cmake\\release\\obj",
+    "jsonFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release",
+    "gradleBuildOutputFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86",
+  "jsonFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86",
+  "objFolder": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\build\\intermediates\\cmake\\release\\obj\\x86",
+  "buildCommandFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86\\build_command.txt",
+  "buildOutputFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86\\build_output.txt",
+  "modelOutputFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86\\CMakeLists.txt",
+    "toolchainWrapperFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86\\build_generation_state.json",
+    "cacheKeyFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86\\compiler_cache_key.json",
+    "compilerCacheUseFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cxx\\release\\x86\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86\\json_generation_record.json",
+  "compileCommandsJsonFile": "C:\\Users\\para\\Android\\pasteur-android-v3\\app\\.cxx\\cmake\\release\\x86\\compile_commands.json"
+}
